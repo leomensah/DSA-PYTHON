@@ -30,3 +30,5 @@ class Solution:
 
 input = [1,2,3,4,5]
 ouput = [5,4,3,2,1]
+sol = Solution()
+print(sol.reverseList(input))
