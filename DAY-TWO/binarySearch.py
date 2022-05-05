@@ -1,10 +1,10 @@
 def binarySearch(array, left, right, target):
     if left > right:
         return -1
-    mid = left + (right - left)  // 2
+    mid = left + (right - left) // 2
     if array[mid] == target:
         return mid
-    if target < array[mid]:
+    if array[left] < target:
         return binarySearch(array, left, mid-1, target)
     else:
         return binarySearch(array, mid+1, right, target)
